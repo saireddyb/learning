@@ -1,0 +1,41 @@
+$ SET name saireddy
+$ GET name
+$ DEL age
+
+$ EXISTS name
+
+$ KEYS *
+
+$ flushall 
+
+$ ttl name 
+
+$ expire name 10
+
+$ ttl name 
+$ setex name 10 sai 
+
+$ lpush friends john
+
+$ lrange friends 0 -1
+
+$ lpush friends sally
+
+$ rpush friends mike
+
+$ lpop friends 
+
+$ rpop friends
+
+---
+
+$ sadd hobbies "weight lifting"
+$ smembers 0 -1
+
+$ smembers hobbies
+
+$ srem hobbies "weight lifting"
+
+---
+
+hset person name 
