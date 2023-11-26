@@ -1,0 +1,60 @@
+1- Statically types language
+2- Strongly types language
+3- Go is compiled
+4- Fast Compile Time
+5- built in concurrency
+6- simplicity
+
+
+Package is go is a collection of go files in a folder
+And collection of these package is known as module
+
+When initializing a go project we are creating a module
+> go mod init <modulename>
+
+go.mod file a module file 
+
+package main is to tell look for entrypoint function here
+
+
+
+go data types
+
+const myConst
+var myVar
+
+bool
+folat32 float64
+int int16 int32 int64
+rune
+string
+uint uint8 uint16 uint32
+
+-----------
+
+function 
+
+func hello(a string) (int, int) {
+  return 5, 5
+}
+
+-----------
+struct and interfaces
+
+
+type gasEngine struct{
+  mpg uint8
+  gallons uint8
+}
+
+myEngine1 := gasEngine{mpg:25, gallons:14}
+var myEngine2 gasEngine = gasEngine{mpg:25, gallons:15}
+
+
+methods 
+
+func (e gasEngine) milesLeft() uint8 {
+  return e.gallons*e.mpg
+}
+-----------
+
