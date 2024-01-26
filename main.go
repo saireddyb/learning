@@ -2,19 +2,14 @@ package main
 
 import "fmt"
 
-var i = 5
-
 func main() {
-	fmt.Println("hello")
-	recur()
+	f(1, 5)
 }
 
-func recur() {
-	if i == 0 {
-		return
-	}
+func f(i int, j int) {
+  if i > 5 {
+    return
+  }
 	fmt.Println(i)
-	i--
-  recur()
-
+	f(i+1, j)
 }
