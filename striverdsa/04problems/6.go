@@ -1,4 +1,4 @@
-// Left Rotate an array by one place
+// Left Rotate an array by p place
 
 package main
 
@@ -13,10 +13,10 @@ func main() {
 
 func rotaten(arr []int, p int) {
 	var temp []int = make([]int, p)
+	n := len(arr)
 	for i:=0; i<p; i++{
 		temp[i] = arr[i]
 	}
-	n := len(arr)
 	for i:=p; i<n; i++ {
 		arr[i-p]= arr[i]
 	}
